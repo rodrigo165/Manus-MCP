@@ -25,13 +25,15 @@ npm run build
 Use this one-liner (replace with your real API key):
 
 ```bash
-claude mcp add "Manus MCP" -s user -e MANUS_MCP_API_KEY="your-api-key-here" -- npx manus-mcp
+claude mcp add manus-mcp -s user -e MANUS_MCP_API_KEY="your-api-key-here" -- npx manus-mcp
 ```
+
+**Note**: Use `manus-mcp` (not `"Manus MCP"`) as the name. Claude CLI requires names without spaces.
 
 To remove:
 
 ```bash
-claude mcp remove "Manus MCP"
+claude mcp remove manus-mcp
 ```
 
 ## Setup: Cursor
