@@ -200,9 +200,10 @@ Add the following to your Codex TOML configuration:
 [mcp_servers.manus-mcp]
 command = "npx"
 args = ["manus-mcp"]
-# Optional environment variables:
-# MANUS_MCP_API_KEY = "your-api-key-here"
-# MCP_NAME = "manus-mcp"
+
+[mcp_servers.manus-mcp.env]
+MANUS_MCP_API_KEY = "your-api-key-here"
+# MCP_NAME = "manus-mcp"  # Optional: override server name
 ```
 
 ## Configuration (Env)
