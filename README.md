@@ -194,17 +194,7 @@ Follow the Windsurf MCP integration guide and reuse the standard config:
 
 ## Setup: Codex (TOML)
 
-Add the following to your Codex TOML configuration.
-
-Example (Serena reference):
-
-```toml
-[mcp_servers.serena]
-command = "uvx"
-args = ["--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server", "--context", "codex"]
-```
-
-This server (minimal):
+Add the following to your Codex TOML configuration:
 
 ```toml
 [mcp_servers.manus-mcp]
