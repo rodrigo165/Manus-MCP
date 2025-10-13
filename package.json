@@ -1,0 +1,39 @@
+{
+  "name": "manus-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Manus API - Create AI tasks and manage webhooks",
+  "main": "./build/index.js",
+  "type": "module",
+  "bin": {
+    "manus-mcp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "prepare": "npm run build",
+    "dev": "tsc --watch"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "manus",
+    "ai",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}
+
