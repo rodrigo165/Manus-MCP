@@ -1,7 +1,7 @@
 {
   "name": "manus-mcp",
   "version": "1.0.0",
-  "description": "MCP server for Manus API - Create AI tasks and manage webhooks",
+  "description": "MCP bridge for a Manus agent, served over Streamable HTTP for remote clients like Copilot Studio",
   "main": "./build/index.js",
   "type": "module",
   "bin": {
@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js",
     "prepare": "npm run build",
     "dev": "tsc --watch"
   },
@@ -28,10 +29,12 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.4",
-    "dotenv": "^16.4.7"
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1"
   },
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.10.5",
     "typescript": "^5.7.2"
   }
