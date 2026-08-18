@@ -2,7 +2,7 @@
 
 The Universal MCP Server for Manus AI enables you to create AI tasks, manage webhooks, and integrate Manus workflows into any MCP-compatible client. Designed for prompt-first usage with full support for attachments, connectors, and real-time notifications.
 
-## Installation
+## Installation.
 
 ### Prerequisites
 - Node.js 18+
